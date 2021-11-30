@@ -99,9 +99,10 @@ body {
 /* Content styling */
 
 .content-container {
-    margin-top: 12.5em;
+    margin-top: 10em;
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .general-inquiries > h1,
@@ -123,7 +124,6 @@ body {
 
 .general-inquiries {
     flex-grow: 1;
-    padding-right: 2em;
 }
 
 .text-input {
@@ -371,8 +371,25 @@ body {
     text-align: center;
     font-size: 14px;
     border-radius: 300px;
+    transition: .1s opacity linear;
 }
 
+.submit-btn:hover {
+    opacity: .8;
+}
+
+/* Submit Button Complete */
+
 .the-gram {
-    flex-grow: 2;
+    flex-grow: 1;
+    padding-left: 2em;
+    width: 50%;
+}
+
+.the-gram > h1 {
+    margin-bottom: .3em;
+}
+
+.images {
+    width: 100%;
 }

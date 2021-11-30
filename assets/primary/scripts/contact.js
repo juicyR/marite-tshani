@@ -30,7 +30,7 @@ displaySplash();
 }*/
 
 /*Nav*/document.addEventListener("scroll", function() {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 30) {
         nav.style.opacity = '0';
         nav.style.zIndex = '-100';
         //Splash code that follows the scroll function
