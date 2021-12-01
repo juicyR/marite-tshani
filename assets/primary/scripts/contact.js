@@ -1,5 +1,6 @@
 let bods = document.body;
 let nav = document.getElementById("nav");
+
 // Splash
 let splash = document.querySelector('.splash');
 function displaySplash() {
@@ -9,7 +10,7 @@ function displaySplash() {
             splash.style.zIndex = '-100';
             bods.style.overflowY = 'scroll';
         }, 5000);
-    })
+    });
     
     document.onclick = function disappear() {
         splash.style.opacity = '0';
@@ -19,7 +20,6 @@ function displaySplash() {
 }
 
 displaySplash();
-
 
 /* !Body Logic! */
 
@@ -68,3 +68,34 @@ const setActive = (el, active) => {
     setActive(el, true);
   };
 });
+
+// footer
+let footer = document.querySelector('.footer');
+let ig = document.querySelector('.ig-div');
+let mail = document.querySelector('.mail-div');
+let pinterest = document.querySelector('.pin-div');
+
+function hover() {
+    console.log("hi boo");
+}
+
+// ig.style.opacity = '0';
+
+function reduceOpacity() {
+    ig.style.opacity = '.6';
+    mail.style.opacity = '.6';
+    pinterest.style.opacity = '.6';
+}
+function increaseOpacity() {
+    ig.style.opacity = '1';
+    mail.style.opacity = '1';
+    pinterest.style.opacity = '1';
+}
+
+footer.onmouseover = function() {reduceOpacity()};
+footer.onmouseout = function() {increaseOpacity()};
+
+// Remove embed pop up
+let feed = document.querySelector(".eapps-link");
+// Failed to work, Gave up
+// -----------------------------------------------------------------
