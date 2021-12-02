@@ -95,7 +95,17 @@ function increaseOpacity() {
 footer.onmouseover = function() {reduceOpacity()};
 footer.onmouseout = function() {increaseOpacity()};
 
+// Submit Form
+document.querySelector('#contact-form').addEventListener('submit', submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+  console.log('hello');
+}
+
+// Firebase Code
+
+
 // Remove embed pop up
 let feed = document.querySelector(".eapps-link");
 // Failed to work, Gave up
-// -----------------------------------------------------------------

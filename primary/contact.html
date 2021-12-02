@@ -34,18 +34,18 @@
             <div class="general-inquiries">
                 <h1>General<br>Inquiries</h1>
                 <p>— I'd love to hear from you</p>
-                <div class="text-input">
 
+                <form class="text-input" id="contact-form">
                     <!-- Copied code https://codepen.io/melnik909/pen/BZpJLN?editors=1000 -->
                     <div class="names">
                         <label class="field field_v2">
-                            <input class="field__input" placeholder=" ">
+                            <input class="field__input" placeholder=" " id="first-name">
                             <span class="field__label-wrap">
                               <span class="field__label">First name</span>
                             </span>
                         </label>
                         <label class="field field_v2">
-                            <input class="field__input" placeholder=" ">
+                            <input class="field__input" placeholder=" " id="second-name">
                             <span class="field__label-wrap">
                               <span class="field__label">Last name</span>
                             </span>
@@ -53,7 +53,7 @@
                     </div>
 
                     <label class="field field_v2 change">
-                        <input class="field__input" placeholder=" ">
+                        <input class="field__input" placeholder=" " id="email">
                         <span class="field__label-wrap">
                           <span class="field__label">Email Address</span>
                         </span>
@@ -63,15 +63,12 @@
                     <div class="form-field">
                         <div class="form-field__control">
                             <label for="additionalInfo" class="form-field__label">Message</label>
-                            <textarea id="additionalInfo" class="form-field__textarea"></textarea>
+                            <textarea id="message" class="form-field__textarea"></textarea>
                         </div>
                     </div>
-                    
-                </div>
-
-                <div class="submit-button">
-                    <a href="#" class="submit-btn">Boom!</a>
-                </div>
+                    <button class="submit-button" type="submit">Boom!</button>
+                </form>
+                
             </div>
             <div class="the-gram">
                 <h1>The 'Gram</h1>
@@ -83,9 +80,9 @@
         </div>
 
         <footer class="footer">
-            <div class="mail-div"><a href="#"><img src="/assets/primary/images/mail-white.svg" alt="mail-icon" class="mail"></a></div>
-            <div class="ig-div"><a href="#"><img src="/assets/primary/images/instagram-white.svg" alt="instagram" class="ig"></a></div>
-            <div class="pin-div"><a href="#"><img src="/assets/primary/images/pinterest-white.svg" alt="pinterest" class="pinterest"></a></div>
+            <div class="mail-div"><a href="mailto:maritetshani@yahoo.com" target="blank"><img src="/assets/primary/images/mail-white.svg" alt="mail-icon" class="mail"></a></div>
+            <div class="ig-div"><a href="https://www.instagram.com/tshanimarithe/" target="blank"><img src="/assets/primary/images/instagram-white.svg" alt="instagram" class="ig"></a></div>
+            <div class="pin-div"><a href="https://www.pinterest.com/tshanimarithe/_saved/" target="blank"><img src="/assets/primary/images/pinterest-white.svg" alt="pinterest" class="pinterest"></a></div>
         </footer>
 
     </div>
