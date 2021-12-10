@@ -2,6 +2,10 @@ let bods = document.body;
 let nav = document.getElementById("nav");
 
 // Splash
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 let splash = document.querySelector('.splash');
 function displaySplash() {
     document.addEventListener('DOMContentLoaded', (e)=>{
@@ -94,44 +98,6 @@ function increaseOpacity() {
 
 footer.onmouseover = function() {reduceOpacity()};
 footer.onmouseout = function() {increaseOpacity()};
-
-
-// Firebase Code
-// Reference messages collection
-var messagesRef = firebase.database().ref('messages');
-
-// Submit Form
-document.querySelector('#contact-form').addEventListener('submit', submitForm);
-
-function submitForm(e) {
-  e.preventDefault();
-
-  // Get all values
-  var firstName = getInputVal('first-name');
-  var lastName = getInputVal('second-name');
-  var email = getInputVal('email');
-  var message = getInputVal('message');
-
-  // Save Message
-  saveMessage(firstName, lastName, email, message);
-}
-
-// Function To get form values
-function getInputVal(id) {
-  return document.getElementById(id).value;
-}
-
-// Save Messages to Firebase
-function saveMessage(firstName, lastName, email, message) {
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    firstName:firstName,
-    lastName:lastName,
-    email:email,
-    message:message
-  });
-}
-
 
 // Remove embed pop up from free instagram widget
 let feed = document.querySelector(".eapps-link");

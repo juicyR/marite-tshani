@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/primary/styles/components.css">
     <link rel="stylesheet" href="../assets/primary/styles/responsiveness.css">
     <link rel="icon" href="../assets/primary/images/logo.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Marite Tshani</title>
 </head>
 <body>
@@ -53,9 +54,16 @@
                     </div>
 
                     <label class="field field_v2 change">
-                        <input class="field__input" placeholder=" " id="email">
+                        <input class="field__input" placeholder=" " id="email" type="email">
                         <span class="field__label-wrap">
                           <span class="field__label">Email Address</span>
+                        </span>
+                    </label>
+
+                    <label class="field field_v2 change">
+                        <input class="field__input" placeholder=" " id="phone" type="number">
+                        <span class="field__label-wrap">
+                          <span class="field__label">Phone Number</span>
                         </span>
                     </label>
 
@@ -66,12 +74,12 @@
                             <textarea id="message" class="form-field__textarea"></textarea>
                         </div>
                     </div>
-                    <button class="submit-button" type="submit">Boom!</button>
+                    <button class="submit-button" type="submit" id="submit">Boom!</button>
                 </form>
                 
             </div>
             <div class="the-gram">
-                <h1>The 'Gram</h1>
+                <h1 id="gram-baby">The 'Gram</h1>
                 <div class="images">
                     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                     <div class="elfsight-app-238a27d7-baf0-4a1b-9e29-6ee7cb030915"></div>
@@ -86,6 +94,7 @@
         </footer>
 
     </div>
+    <script type="module" src="/assets/primary/scripts/contact-firebase.js"></script>
     <script src="/assets/primary/scripts/contact.js"></script>
 </body>
 </html>
