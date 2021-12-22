@@ -50,7 +50,6 @@ displaySplash();
 
 
 // Message text box
-"use strict";
 
 const setActive = (el, active) => {
   const formField = el.parentNode.parentNode;
@@ -100,5 +99,8 @@ footer.onmouseover = function() {reduceOpacity()};
 footer.onmouseout = function() {increaseOpacity()};
 
 // Remove embed pop up from free instagram widget
-let feed = document.querySelector(".eapps-link");
+// var iframe = document.querySelector(".elfsight-app-238a27d7-baf0-4a1b-9e29-6ee7cb030915");
+// var elmnt = iframe.contentWindow.document.getElementsByTagName("A")[0];
+// elmnt.style.display = "none";
+
 // Failed to work, Gave up

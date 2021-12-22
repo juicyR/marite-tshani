@@ -1,0 +1,19 @@
+body {
+    background-color: #f3ecec;
+    overflow-y: hidden;
+}
+
+body {
+    padding: 1em 1em;
+    overflow: scroll;
+}
+
+/* Page styling */
+
+.message-box {
+    width: 30%;
+    height: 50vh;
+    background: #ff91d3;
+    display: inline-block;
+    border-radius: 20px;
+}

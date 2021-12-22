@@ -24,7 +24,8 @@ const analytics = getAnalytics(app);
 const submit = document.getElementById("submit");
 
 submit.addEventListener("click", writeUserData);
-function writeUserData(firstName, lastName, email, phone, message) {
+function writeUserData(event, firstName, lastName, email, phone, message) {
+    event.preventDefault();
     const db = getDatabase();
     firstName = document.getElementById("first-name");
     lastName = document.getElementById("second-name");
