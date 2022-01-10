@@ -8,7 +8,13 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.0/
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-...
+  apiKey: "AIzaSyAWrHUU5IaQ-FoQCcwzYQHdyRXakHn9PQU",
+  authDomain: "marite-tshani.firebaseapp.com",
+  databaseURL: "https://marite-tshani-default-rtdb.firebaseio.com",
+  projectId: "marite-tshani",
+  storageBucket: "marite-tshani.appspot.com",
+  messagingSenderId: "288986402380",
+  appId: "1:288986402380:web:db4b0edc2717a6856feee9",
 };
 
 // Initialize Firebase
